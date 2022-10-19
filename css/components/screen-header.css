@@ -1,0 +1,29 @@
+.screen-header{
+  display: flex;
+  justify-content: space-between;
+  padding: var(--horigontal-space);
+  padding-top: 40px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.screen-header__title{
+  font-size: 28px;
+  font-weight: 600;
+}
+.screen-header__icons{
+  display: flex;
+  justify-content: flex-end;
+}
+.screen-header__icons span{
+  margin-left: 28px; 
+}
+@keyframes rotate{
+  from{
+    transform: none;
+  }to{
+    transform: rotateZ(360deg);
+  }
+}
+.screen-header__icons .fa-gear:hover{
+  animation: rotate 3s linear infinite;
+}
